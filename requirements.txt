@@ -1,0 +1,30 @@
+# requirements.txt，基于 pip install 结果固定版本
+
+fastmcp==2.12.5
+mcp==1.16.0
+pre-commit==4.3.0
+chromadb==1.2.1
+openai==2.6.0
+psycopg2-binary==2.9.11
+python-dotenv==1.1.1
+llama-index-core==0.14.5
+docx2md==1.0.4
+pytest-mock==3.14.0
+httpx==0.28.1
+tavily-python==0.7.13
+
+polars==1.35.2 #  数据分析及代码执行
+
+# 测试相关依赖
+pytest==7.4.3
+pytest-asyncio
+iniconfig
+packaging
+pluggy>=0.12,<2.0
+exceptiongroup>=1.0.0rc8
+tomli>=1.0.0
+colorama
+typing-extensions>=4.6.0
+black==24.10.0
+pylint==3.3.1
+isort==5.13.2

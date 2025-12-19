@@ -1,0 +1,100 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+!frontend/src/lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.openmcp/
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/
+Toolsbackend/datas/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+
+# Node modules (if using npm)
+node_modules/
+package-lock.json
+
+# Prettier cache
+.cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Environment variables
+.env
+.env.local
+
+# Cache directories
+.cached_embedding_client_cache
+.litellm_cache
+
+# others
+.github/
+.github/instructions/
+/supabase/docker-compose-xuanyuan.yml
+# Supabase volumes: 仅忽略运行时 postgres 数据目录 data
+# 其余模板、源码、配置文件仍可被版本控制
+
+# 只忽略具体的运行时数据目录
+/supabase/volumes/db/data/
+/supabase/volumes/storage/
+ 
+# 账户到 supabase logs 配置文件，repo 中全局有 logs/ 忽略规则，
+# 但我们需要保留 supabase 的 logs 配置以便版本控制，故在此放行
+!/supabase/volumes/logs/
+!/supabase/volumes.example/logs/
+
+old_test_temp
+
+# Ignore openspec directory
+/openspec/
+
+# Uploaded files
+uploads/
