@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.13"
 resolution-markers = [
     "python_full_version >= '3.14'",
@@ -1721,6 +1721,12 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/c9/0e/7cebc88e17daf94ebe28c95633af595ccb2864dc2ee7abd75542d98495cc/mcp-1.16.0-py3-none-any.whl", hash = "sha256:ec917be9a5d31b09ba331e1768aa576e0af45470d657a0319996a20a57d7d633", size = 167266, upload-time = "2025-10-02T16:58:19.039Z" },
 ]
 
+[package.optional-dependencies]
+cli = [
+    { name = "python-dotenv" },
+    { name = "typer" },
+]
+
 [[package]]
 name = "mcp-tool"
 version = "0.1.0"
@@ -1737,7 +1743,7 @@ dependencies = [
     { name = "isort" },
     { name = "llama-index-core" },
     { name = "matplotlib" },
-    { name = "mcp" },
+    { name = "mcp", extra = ["cli"] },
     { name = "openai" },
     { name = "packaging" },
     { name = "pandas" },
@@ -1772,7 +1778,7 @@ requires-dist = [
     { name = "isort", specifier = "==5.13.2" },
     { name = "llama-index-core", specifier = "==0.14.5" },
     { name = "matplotlib", specifier = ">=3.10.8" },
-    { name = "mcp", specifier = "==1.16.0" },
+    { name = "mcp", extras = ["cli"], specifier = "==1.16.0" },
     { name = "openai", specifier = "==2.6.0" },
     { name = "packaging", specifier = ">=25.0" },
     { name = "pandas", specifier = ">=2.3.3" },
